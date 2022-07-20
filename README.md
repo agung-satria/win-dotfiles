@@ -1,6 +1,6 @@
 # Scr
 
-![](ss\w.png)
+![](ss/w.png)
 
 # Post Install
 
