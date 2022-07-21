@@ -1,6 +1,6 @@
 # Scr
 
-![](ss/w.png)
+![](ss/nvim.png)
 
 # Post Install
 

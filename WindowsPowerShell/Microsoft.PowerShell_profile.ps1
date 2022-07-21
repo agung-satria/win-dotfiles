@@ -3,7 +3,9 @@ oh-my-posh.exe init pwsh --config "C:\Users\AGSTR\.dotfiles\oh-my-posh\mojada.om
 Set-Alias -name net -value get-netadapter
 Set-Alias -name v -value nvim
 Set-Alias -name ff -value winfetch
+Set-Alias -name neofetch -value winfetch
 Set-Alias -name c -value clear
+Set-Alias -name x -value explorer
 
 function vp {
   v $profile
@@ -11,17 +13,19 @@ function vp {
 
 function cdmysql {
 	cd d:\xampp\mysql\bin\
+  ls mysql.exe
+  echo "`nExecute fullname of mysql binary"
 }
 
 function dotfiles {
 	cd c:\users\AGSTR\.dotfiles\
 }
 
-function cdnvimconfig {
+function cn {
 	cd c:\Users\AGSTR\.config\nvim
 }
 
-function cdnvimlocal {
+function cnl {
 	cd c:\Users\AGSTR\AppData\Local\nvim
 }
 
@@ -31,6 +35,10 @@ function cdhtdocs {
 
 function cdd {
 	cd 'd:\'
+}
+
+function cdh {
+  cd C:\Users\AGSTR\
 }
 
 function cdc {
@@ -58,9 +66,9 @@ function cddesktop {
 }
 
 function cpnvim {
-	explorer.exe C:\Users\AGSTR\.config\nvim\
-	explorer.exe C:\Users\AGSTR\AppData\Local\nvim\
-  echo "Copy -R ~\.config/nvim ~\AppData\Local\nvim"
+	x C:\Users\AGSTR\.config\nvim\
+	x C:\Users\AGSTR\AppData\Local\nvim\
+  echo "match it (????????)"
 }
 
 function cptodotfiles {
