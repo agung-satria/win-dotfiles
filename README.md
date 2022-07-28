@@ -62,4 +62,18 @@ PlugInstall (ikuti instruksi di nvim repo)\
 :CocInstall coc-webview coc-markdown-preview-enhanced
 Done!
 
+# Disable ctrl-v
+
+because ctrl-v is conflict with paste in windows terminal, which in vim it uses for visual block mode
+
+```sh
+Open Settings (ctrl-,)
+Navigate to action
+Search for copy and paste text
+Change it to Ctrl+Shift+{c,p} or something
+Then delete the default keybinding (ctrl-{c,v})
+Save
+
+```
+
 > **_VIM NOTE:_** File config nvim di (.config). File terbaca di AppData\Local.
